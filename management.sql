@@ -1,0 +1,20 @@
+create TABLE `CUSTOMER`(
+	ID INT PRIMARY KEY auto_increment,
+    IMAGE VARCHAR(1024),
+    NAME VARCHAR(64),
+    BIRTHDAY VARCHAR(64),
+    GENDER VARCHAR(64),
+    JOB VARCHAR(64)
+) DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+drop table CUSTOMER;
+
+INSERT INTO CUSTOMER (IMAGE,NAME,BIRTHDAY,GENDER,JOB) VALUES ('https://placeimg.com/64/64/1', '홍길동', '960508', '남자', '대학생');
+
+INSERT INTO CUSTOMER (IMAGE,NAME,BIRTHDAY,GENDER,JOB) VALUES ('https://placeimg.com/64/64/2', '이승재', '900430', '남자', '프로그래머');
+
+INSERT INTO CUSTOMER (IMAGE,NAME,BIRTHDAY,GENDER,JOB) VALUES ('https://placeimg.com/64/64/3', '이순신', '961127', '남자', '디자이너');
+
+commit;
+
+SELECT * FROM CUSTOMER;
